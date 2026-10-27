@@ -26,7 +26,7 @@
 .topbar{background:#0b2335;color:#dce8ef;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 header{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 250, 0.95)), url("./%D8%B4%D8%B9%D8%A7%D8%B1%20%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%D9%8A%D8%A9%20%281%29.png") center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 250, 0.95)), url("./شعار مكتبة التمريض العصرية (1).png") center/cover no-repeat;
   color: var(--ink);
   padding: 36px 0 56px;
   position: relative;
@@ -144,7 +144,7 @@ footer p{margin:5px 0}
       <div class="eyebrow">منكم، ومعكم، ولأجلكم..</div>
       <h2>منكم، ومعكم، ولأجلكم..</h2>
       <div class="intro-copy">
-        <p>أنشأ الطالبان محمد الدهشان وأحمد أبو وردة هذه المكتبة لتجمع مواد قسم التمريض وخططه وروابطه والمصادر الموثوقة في مكان واحد، امتدادًا لرسالة حركة الشبيبة الفتحاوية في خدمة الطلبة ودعم تميزهم.</p>
+        <p>أنشأ الطالبان محمد الدهشان وأحمد أبو وردة هذه المكتبة لتجمع مواد قسم المريض وخططه وروابطه والمصادر الموثوقة في مكان واحد، امتدادًا لرسالة حركة الشبيبة الفتحاوية في خدمة الطلبة ودعم تميزهم.</p>
         <p class="intro-signature">قسم التمريض | حركة الشبيبة الفتحاوية</p>
       </div>
       <form class="search" id="searchForm">
@@ -155,7 +155,7 @@ footer p{margin:5px 0}
   </div>
 </header>
 <main class="wrap">
-<div class="quicklinks">
+<div class="quicklinks" id="quicklinksContainer">
 <button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="true"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>المساقات ومحاضراتها</p></button>
 <button type="button" class="quick quick-toggle" data-target="representatives" aria-expanded="false"><div class="ico">🎓</div><h3>الممثلون</h3><p>الممثلون وإدارة الكلية</p></button>
 <button type="button" class="quick quick-toggle" data-target="groups" aria-expanded="false"><div class="ico">👥</div><h3>القروبات الطلابية</h3><p>قروبات الدفعات</p></button>
@@ -167,7 +167,7 @@ footer p{margin:5px 0}
 <!-- قسم الخطة الدراسية -->
 <section id="plan" class="main-section">
 <div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
-<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><a href="./Quran1.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (1) ↗</a><a href="./Arabic.pdf" target="_blank" class="subject-link" data-searchable>📝 اللغة العربية (1) ↗</a><a href="./english.pdf.pdf" target="_blank" class="subject-link" data-searchable>🔤 اللغة الإنجليزية (1) ↗</a><button type="button" class="subject subject-button" data-course="anatomy1" data-searchable aria-haspopup="true">تشريح وعلم وظائف الأعضاء (1) ↗</button><button type="button" class="subject subject-button" data-course="med_term" data-searchable aria-haspopup="true">مفردات طبية ↗</button><button type="button" class="subject subject-button" data-course="biology" data-searchable aria-haspopup="true">بيولوجيا عامة ↗</button><span class="subject" data-searchable>كيمياء للعلوم الصحية</span><button type="button" class="subject subject-button" data-course="first_aid" data-searchable aria-haspopup="true">الإسعافات الأولية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><a href="./Jurisprudence.pdf" target="_blank" class="subject-link" data-searchable>⚖️ دراسات في الفقه ↗</a><a href="./Quran%202.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (2) ↗</a><button type="button" class="subject subject-button" data-course="anatomy2" data-searchable aria-haspopup="true">تشريح وعلم وظائف الأعضاء (2) ↗</button><button type="button" class="subject subject-button" data-course="math_med" data-searchable aria-haspopup="true">رياضيات للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="physics_health" data-searchable aria-haspopup="true">فيزياء للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="biochem1" data-searchable aria-haspopup="true">كيمياء حيوية (1) ↗</button><button type="button" class="subject subject-button" data-course="mental_health_principles" data-searchable aria-haspopup="true">مبادئ الصحة النفسية ↗</button></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><a href="./Quran1.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (1) ↗</a><a href="./Arabic.pdf" target="_blank" class="subject-link" data-searchable>📝 اللغة العربية (1) ↗</a><a href="./English.pdf" target="_blank" class="subject-link" data-searchable>🔤 اللغة الإنجليزية (1) ↗</a><button type="button" class="subject subject-button" data-course="anatomy1" data-searchable aria-haspopup="true">تشريح وعلم وظائف الأعضاء (1) ↗</button><button type="button" class="subject subject-button" data-course="med_term" data-searchable aria-haspopup="true">مفردات طبية ↗</button><button type="button" class="subject subject-button" data-course="biology" data-searchable aria-haspopup="true">بيولوجيا عامة ↗</button><span class="subject" data-searchable>كيمياء للعلوم الصحية</span><button type="button" class="subject subject-button" data-course="first_aid" data-searchable aria-haspopup="true">الإسعافات الأولية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><a href="./Jurisprudence.pdf" target="_blank" class="subject-link" data-searchable>⚖️ دراسات في الفقه ↗</a><a href="./Quran%202.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (2) ↗</a><button type="button" class="subject subject-button" data-course="anatomy2" data-searchable aria-haspopup="true">تشريح وعلم وظائف الأعضاء (2) ↗</button><button type="button" class="subject subject-button" data-course="math_med" data-searchable aria-haspopup="true">رياضيات للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="physics_health" data-searchable aria-haspopup="true">فيزياء للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="biochem1" data-searchable aria-haspopup="true">كيمياء حيوية (1) ↗</button><button type="button" class="subject subject-button" data-course="mental_health_principles" data-searchable aria-haspopup="true">مبادئ الصحة النفسية ↗</button></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><a href="./Studies%20adition%20Prophetic%20i.pdf" target="_blank" class="subject-link" data-searchable>📜 دراسات في الحديث وعلومه ↗</a><a href="./Studies%20Islamic%20in%20Faith.pdf" target="_blank" class="subject-link" data-searchable>🕌 دراسات في العقيدة الإسلامية ↗</a><button type="button" class="subject subject-button" data-course="ethics" data-searchable aria-haspopup="true">أخلاقيات مهنة التمريض ↗</button><button type="button" class="subject subject-button" data-course="fundamentals1" data-searchable aria-haspopup="true">أساسيات التمريض (1) نظري ↗</button><span class="subject" data-searchable>أساسيات تمريض (1) عملي</span><button type="button" class="subject subject-button" data-course="pharma" data-searchable aria-haspopup="true">علم الأدوية ↗</button><button type="button" class="subject subject-button" data-course="patho" data-searchable aria-haspopup="true">علم الأمراض ↗</button><button type="button" class="subject subject-button" data-course="dosage" data-searchable aria-haspopup="true">علم حساب الجرعة العلاجية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><a href="./Quran%203.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (3) ↗</a><button type="button" class="subject subject-button" data-course="fundamentals2" data-searchable aria-haspopup="true">أساسيات التمريض (2) نظري ↗</button><button type="button" class="subject subject-button" data-course="fundamentals2_practical" data-searchable aria-haspopup="true">أساسيات التمريض (2) عملي ↗</button><button type="button" class="subject subject-button" data-course="health_assessment" data-searchable aria-haspopup="true">التقييم الصحي السريري للمريض ↗</button><button type="button" class="subject subject-button" data-course="surgery1" data-searchable aria-haspopup="true">تمريض جراحة باطنة (1) نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject" data-searchable>تدريب اكلينيكي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><a href="./Quran%204.pdf" target="_blank" class="subject-link" data-searchable>📖 قرآن كريم (4) ↗</a><button type="button" class="subject subject-button" data-course="growth" data-searchable aria-haspopup="true">علم النمو والتطور للإنسان ↗</button><button type="button" class="subject subject-button" data-course="surgery2" data-searchable aria-haspopup="true">تمريض جراحة باطنة (2) نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنة (2) عملي</span><button type="button" class="subject subject-button" data-course="pediatrics" data-searchable aria-haspopup="true">تمريض أطفال وحديثي الولادة نظري ↗</button><span class="subject" data-searchable>تمريض أطفال وحديثي الولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في التفسير وعلوم القرآن</span><button type="button" class="subject subject-button" data-course="nutrition" data-searchable aria-haspopup="true">علم التغذية ↗</button><button type="button" class="subject subject-button" data-course="microbiology" data-searchable aria-haspopup="true">علم الأحياء الدقيقة ↗</button><button type="button" class="subject subject-button" data-course="surgery3" data-searchable aria-haspopup="true">تمريض جراحة باطنه (3) - Gerontology نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنه (3) - Gerontology عملي</span><button type="button" class="subject subject-button" data-course="psychiatric" data-searchable aria-haspopup="true">تمريض الصحة النفسية / نظري ↗</button><span class="subject" data-searchable>تمريض الصحة النفسية / عملي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><a href="./Palestiniann%20and%20Land.pdf" target="_blank" class="subject-link" data-searchable>🇵🇸 فلسطين الأرض والإنسان ↗</a><button type="button" class="subject subject-button" data-course="theories" data-searchable aria-haspopup="true">النظريات التمريضية ↗</button><button type="button" class="subject subject-button" data-course="research" data-searchable aria-haspopup="true">مناهج البحث العلمي للتمريض ↗</button><button type="button" class="subject subject-button" data-course="epidemiology" data-searchable aria-haspopup="true">الصحة العامة وعلم الوبائيات ↗</button><button type="button" class="subject subject-button" data-course="maternity" data-searchable aria-haspopup="true">تمريض النساء والولادة نظري ↗</button><span class="subject" data-searchable>تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><a href="./Sciences%20Environmenta.pdf" target="_blank" class="subject-link" data-searchable>🌿 علوم البيئة ↗</a><button type="button" class="subject subject-button" data-course="radiology" data-searchable aria-haspopup="true">مدخل لعلوم الأشعة ↗</button><button type="button" class="subject subject-button" data-course="critical_care" data-searchable aria-haspopup="true">تمريض العناية المكثفة / نظري ↗</button><span class="subject" data-searchable>تمريض العناية المكثفة / عملي</span><button type="button" class="subject subject-button" data-course="community_health" data-searchable aria-haspopup="true">تمريض صحة المجتمع نظري ↗</button><span class="subject" data-searchable>تمريض صحة المجتمع عملي</span><button type="button" class="subject subject-button" data-course="management" data-searchable aria-haspopup="true">الإدارة والقيادة في التمريض / النظري ↗</button><span class="subject" data-searchable>الإدارة والقيادة في التمريض / عملي</span><span class="subject" data-searchable>تدريب امتياز</span></div></div></div></details>
@@ -719,17 +719,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!target) return;
 
     button.addEventListener('click', () => {
-      const isHidden = target.hidden;
-      
       document.querySelectorAll('.main-section').forEach(sec => sec.hidden = true);
       document.querySelectorAll('.quick-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      const courseResources = document.getElementById('courseResources');
+      if(courseResources) courseResources.hidden = true;
 
-      if (isHidden) {
-        target.hidden = false;
-        button.setAttribute('aria-expanded', 'true');
-        lastActiveSectionId = targetId;
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-      }
+      target.hidden = false;
+      button.setAttribute('aria-expanded', 'true');
+      lastActiveSectionId = targetId;
+      target.scrollIntoView({behavior:'smooth', block:'start'});
     });
   });
 
@@ -761,8 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const lecturesPlaceholder = document.getElementById('lecturesPlaceholder');
   const customSlidesContainer = document.getElementById('customSlidesContainer');
   const slidesPlaceholder = document.getElementById('slidesPlaceholder');
-  const slidesTitle = document.getElementById('slidesTitle');
-  const slidesMessage = document.getElementById('slidesMessage');
+  const quicklinksContainer = document.getElementById('quicklinksContainer');
 
   let activeCourseId = 'surgery2';
   let activeCourseName = 'تمريض جراحة باطنة (2) نظري';
@@ -772,7 +769,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "مفردات طبية",
       subtitle: "حركة الشبيبة الفتحاوية - Medical Terminology Course Lectures",
       slides: [
-        { name: "كتاب / ملف المفردات الطبية (PDF)", link: "./Medical%20Terminology.pdf" }
+        { name: "كتاب / ملف المفردات الطبية (PDF)", link: "./Medical Terminology.pdf" }
       ],
       lectures: [
         { name: "Medical Terminology - Lecture (1)", link: "https://youtu.be/umuqjHr0Vls" },
@@ -790,7 +787,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "الإسعافات الأولية",
       subtitle: "حركة الشبيبة الفتحاوية - First Aid Course Slides",
       slides: [
-        { name: "ملف الإسعافات الأولية (PDF)", link: "./First%20Aid%20%28AMS%29%20%283%29_062556.pdf" }
+        { name: "ملف الإسعافات الأولية (PDF)", link: "./First Aid (AMS) (3)_062556.pdf" }
       ],
       lectures: []
     },
@@ -845,7 +842,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تشريح وعلم وظائف الأعضاء (1)",
       subtitle: "حركة الشبيبة الفتحاوية - قائمة التشغيل الكاملة وملف المساق",
       slides: [
-        { name: "ملف تشريح وعلم وظائف الأعضاء 1 (PDF)", link: "./ANATOMY%20%26%20PHYSIOLOGY%20I%20.pdf" }
+        { name: "ملف تشريح وعلم وظائف الأعضاء 1 (PDF)", link: "./ANATOMY & PHYSIOLOGY I .pdf" }
       ],
       lectures: [
         { name: "قائمة تشغيل محاضرات تشريح 1 كاملة", link: "https://youtube.com/playlist?list=PLRxAwfkovUAQ&si=Fkwc7boetOMr" }
@@ -855,7 +852,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تشريح وعلم وظائف الأعضاء (2)",
       subtitle: "حركة الشبيبة الفتحاوية - ملف سلايدات تشريح 2",
       slides: [
-        { name: "ملف تشريح وعلم وظائف الأعضاء 2 (PDF)", link: "./Anatomy%20%26%20Physiology%20%282%29.pdf" }
+        { name: "ملف تشريح وعلم وظائف الأعضاء 2 (PDF)", link: "./Anatomy & Physiology (2).pdf" }
       ],
       lectures: []
     },
@@ -1018,7 +1015,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "علم الأدوية",
       subtitle: "حركة الشبيبة الفتحاوية - سلسلة محاضرات علم الأدوية",
       slides: [
-        { name: "ملف علم الأدوية (PDF)", link: "./Pharmacology_compressed%20%281%29.pdf" }
+        { name: "ملف علم الأدوية (PDF)", link: "./Pharmacology_compressed (1).pdf" }
       ],
       lectures: [
         { name: "Pharmacology – Lecture 1", link: "https://youtu.be/2J3h8ONRUFI" },
@@ -1106,7 +1103,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "أساسيات التمريض (1) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - سلسلة الأساسيات المتميزة",
       slides: [
-        { name: "ملف أساسيات التمريض 1 (PDF)", link: "./Fundamental%20of%20Nursing%20%291%28%20Theory.pdf" }
+        { name: "ملف أساسيات التمريض 1 (PDF)", link: "./Fundamental of Nursing )1( Theory.pdf" }
       ],
       lectures: [
         { name: "Fundamental Nursing – Lecture 1: Nursing Foundations", link: "https://www.youtube.com/watch?v=IdseGSACtto" },
@@ -1202,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "التقييم الصحي السريري للمريض",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات التقييم الصحي",
       slides: [
-        { name: "ملف التقييم الصحي (PDF)", link: "./Health_assessment%20%281%29.pdf" }
+        { name: "ملف التقييم الصحي (PDF)", link: "./Health_assessment (1).pdf" }
       ],
       lectures: [
         { name: "Lect Ass 1", link: "https://youtu.be/qdpRbFcpGgo" },
@@ -1234,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنة (1) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - باطني جراحي (1)",
       slides: [
-        { name: "سلايدات جراحة نظري 1 (PDF)", link: "./heory%28%201%20%29Nursing%20Health%20Ad.pdf" }
+        { name: "سلايدات جراحة نظري 1 (PDF)", link: "./heory(%201%20)Nursing%20Health%20Ad.pdf" }
       ],
       lectures: [
         { name: "Respiratory Disorders – Part 2", link: "https://youtu.be/099B7Soc-u4" },
@@ -1268,7 +1265,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنة (2) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - د. يوسف خليفة",
       slides: [
-        { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./Adult%20Health%20Nursing%20%292%28%20Theory.pdf" }
+        { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./Adult%20Health%20Nursing%20)%202(%20Theory.pdf" }
       ],
       lectures: [
         { name: "Assessment of Musculoskeletal Function – Part 1", link: "https://youtu.be/PF9s43MpPJo" },
@@ -1302,7 +1299,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض أطفال وحديثي الولادة نظري",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات تمريض الأطفال",
       slides: [
-        { name: "ملف مادة الأطفال (Pediatrics PDF)", link: "./%D9%85%D8%A7%D8%AF%D8%A9%20pediatric.pdf" }
+        { name: "ملف مادة الأطفال (Pediatrics PDF)", link: "./مادة%20pediatric.pdf" }
       ],
       lectures: []
     },
@@ -1326,7 +1323,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنه (3) - Gerontology نظري",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات جراحة (3)",
       slides: [
-        { name: "سلايدات جراحة 3 (PDF)", link: "./Adult%20Health%20Nursing%20%293%28%20Gerontology%20%29Theor.pdf" }
+        { name: "سلايدات جراحة 3 (PDF)", link: "./Adult%20Health%20Nursing%20)%203(%20Gerontology%20)Theor.pdf" }
       ],
       lectures: [
         { name: "Surgery Lecture 1", link: "https://youtu.be/zvQp05hNuXA" },
@@ -1565,8 +1562,7 @@ document.addEventListener('DOMContentLoaded', function() {
       courseSubtitle.textContent = courseObj.subtitle;
 
       document.querySelectorAll('.main-section').forEach(sec => sec.hidden = true);
-      const ql = document.querySelector('.quicklinks');
-      if (ql) ql.style.display = 'none';
+      if (quicklinksContainer) quicklinksContainer.style.display = 'none';
       
       courseResources.hidden = false;
       resourceOptions.style.display = 'grid';
@@ -1580,8 +1576,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (closeCourse) {
     closeCourse.addEventListener('click', () => {
       courseResources.hidden = true;
-      const ql = document.querySelector('.quicklinks');
-      if (ql) ql.style.display = 'grid';
+      if (quicklinksContainer) quicklinksContainer.style.display = 'grid';
       
       const targetSection = document.getElementById(lastActiveSectionId) || document.getElementById('plan');
       if (targetSection) {
@@ -1590,9 +1585,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (quickBtn) quickBtn.setAttribute('aria-expanded', 'true');
       }
 
-      if (lastClickedCourseBtn) {
-        lastClickedCourseBtn.scrollIntoView({behavior:'smooth', block:'center'});
-      } else if (targetSection) {
+      if (targetSection) {
         targetSection.scrollIntoView({behavior:'smooth', block:'start'});
       }
     });
