@@ -26,7 +26,7 @@
 .topbar{background:#0b2335;color:#dce8ef;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 header{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 250, 0.95)), url("./شعار مكتبة التمريض العصرية (1).png") center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 250, 0.95)), url("./%D8%B4%D8%B9%D8%A7%D8%B1%20%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AA%D9%85%D8%B1%D9%8A%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%D9%8A%D8%A9%20%281%29.png") center/cover no-repeat;
   color: var(--ink);
   padding: 36px 0 56px;
   position: relative;
@@ -761,6 +761,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const lecturesPlaceholder = document.getElementById('lecturesPlaceholder');
   const customSlidesContainer = document.getElementById('customSlidesContainer');
   const slidesPlaceholder = document.getElementById('slidesPlaceholder');
+  const slidesTitle = document.getElementById('slidesTitle');
+  const slidesMessage = document.getElementById('slidesMessage');
 
   let activeCourseId = 'surgery2';
   let activeCourseName = 'تمريض جراحة باطنة (2) نظري';
@@ -770,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "مفردات طبية",
       subtitle: "حركة الشبيبة الفتحاوية - Medical Terminology Course Lectures",
       slides: [
-        { name: "كتاب / ملف المفردات الطبية (PDF)", link: "./Medical Terminology.pdf" }
+        { name: "كتاب / ملف المفردات الطبية (PDF)", link: "./Medical%20Terminology.pdf" }
       ],
       lectures: [
         { name: "Medical Terminology - Lecture (1)", link: "https://youtu.be/umuqjHr0Vls" },
@@ -788,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "الإسعافات الأولية",
       subtitle: "حركة الشبيبة الفتحاوية - First Aid Course Slides",
       slides: [
-        { name: "ملف الإسعافات الأولية (PDF)", link: "./First Aid (AMS) (3)_062556.pdf" }
+        { name: "ملف الإسعافات الأولية (PDF)", link: "./First%20Aid%20%28AMS%29%20%283%29_062556.pdf" }
       ],
       lectures: []
     },
@@ -843,7 +845,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تشريح وعلم وظائف الأعضاء (1)",
       subtitle: "حركة الشبيبة الفتحاوية - قائمة التشغيل الكاملة وملف المساق",
       slides: [
-        { name: "ملف تشريح وعلم وظائف الأعضاء 1 (PDF)", link: "./ANATOMY & PHYSIOLOGY I .pdf" }
+        { name: "ملف تشريح وعلم وظائف الأعضاء 1 (PDF)", link: "./ANATOMY%20%26%20PHYSIOLOGY%20I%20.pdf" }
       ],
       lectures: [
         { name: "قائمة تشغيل محاضرات تشريح 1 كاملة", link: "https://youtube.com/playlist?list=PLRxAwfkovUAQ&si=Fkwc7boetOMr" }
@@ -853,7 +855,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تشريح وعلم وظائف الأعضاء (2)",
       subtitle: "حركة الشبيبة الفتحاوية - ملف سلايدات تشريح 2",
       slides: [
-        { name: "ملف تشريح وعلم وظائف الأعضاء 2 (PDF)", link: "./Anatomy & Physiology (2).pdf" }
+        { name: "ملف تشريح وعلم وظائف الأعضاء 2 (PDF)", link: "./Anatomy%20%26%20Physiology%20%282%29.pdf" }
       ],
       lectures: []
     },
@@ -1016,7 +1018,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "علم الأدوية",
       subtitle: "حركة الشبيبة الفتحاوية - سلسلة محاضرات علم الأدوية",
       slides: [
-        { name: "ملف علم الأدوية (PDF)", link: "./Pharmacology_compressed (1).pdf" }
+        { name: "ملف علم الأدوية (PDF)", link: "./Pharmacology_compressed%20%281%29.pdf" }
       ],
       lectures: [
         { name: "Pharmacology – Lecture 1", link: "https://youtu.be/2J3h8ONRUFI" },
@@ -1104,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "أساسيات التمريض (1) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - سلسلة الأساسيات المتميزة",
       slides: [
-        { name: "ملف أساسيات التمريض 1 (PDF)", link: "./Fundamental of Nursing )1( Theory.pdf" }
+        { name: "ملف أساسيات التمريض 1 (PDF)", link: "./Fundamental%20of%20Nursing%20%291%28%20Theory.pdf" }
       ],
       lectures: [
         { name: "Fundamental Nursing – Lecture 1: Nursing Foundations", link: "https://www.youtube.com/watch?v=IdseGSACtto" },
@@ -1200,7 +1202,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "التقييم الصحي السريري للمريض",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات التقييم الصحي",
       slides: [
-        { name: "ملف التقييم الصحي (PDF)", link: "./Health_assessment (1).pdf" }
+        { name: "ملف التقييم الصحي (PDF)", link: "./Health_assessment%20%281%29.pdf" }
       ],
       lectures: [
         { name: "Lect Ass 1", link: "https://youtu.be/qdpRbFcpGgo" },
@@ -1232,7 +1234,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنة (1) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - باطني جراحي (1)",
       slides: [
-        { name: "سلايدات جراحة نظري 1 (PDF)", link: "./heory(%201%20)Nursing%20Health%20Ad.pdf" }
+        { name: "سلايدات جراحة نظري 1 (PDF)", link: "./heory%28%201%20%29Nursing%20Health%20Ad.pdf" }
       ],
       lectures: [
         { name: "Respiratory Disorders – Part 2", link: "https://youtu.be/099B7Soc-u4" },
@@ -1266,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنة (2) نظري",
       subtitle: "حركة الشبيبة الفتحاوية - د. يوسف خليفة",
       slides: [
-        { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./Adult%20Health%20Nursing%20)%202(%20Theory.pdf" }
+        { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./Adult%20Health%20Nursing%20%292%28%20Theory.pdf" }
       ],
       lectures: [
         { name: "Assessment of Musculoskeletal Function – Part 1", link: "https://youtu.be/PF9s43MpPJo" },
@@ -1300,7 +1302,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض أطفال وحديثي الولادة نظري",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات تمريض الأطفال",
       slides: [
-        { name: "ملف مادة الأطفال (Pediatrics PDF)", link: "./مادة%20pediatric.pdf" }
+        { name: "ملف مادة الأطفال (Pediatrics PDF)", link: "./%D9%85%D8%A7%D8%AF%D8%A9%20pediatric.pdf" }
       ],
       lectures: []
     },
@@ -1324,7 +1326,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "تمريض جراحة باطنه (3) - Gerontology نظري",
       subtitle: "حركة الشبيبة الفتحاوية - محاضرات جراحة (3)",
       slides: [
-        { name: "سلايدات جراحة 3 (PDF)", link: "./Adult%20Health%20Nursing%20)%203(%20Gerontology%20)Theor.pdf" }
+        { name: "سلايدات جراحة 3 (PDF)", link: "./Adult%20Health%20Nursing%20%293%28%20Gerontology%20%29Theor.pdf" }
       ],
       lectures: [
         { name: "Surgery Lecture 1", link: "https://youtu.be/zvQp05hNuXA" },
