@@ -1526,15 +1526,28 @@ pharma: {
     },
 fundamentals1_practical: {
       title: "أساسيات التمريض (1) عملي",
-      subtitle: "حركة الشبيبة الفتحاوية - اختر القسم المطلوب",
-      slides: [
-        { name: "👨‍🏫 [قسم الدكتور وائل مكي] - ملف مهارة غسل اليدين", link: "./Hand Washing Skill.pdf" },
-        { name: "👨‍🏫 [قسم الدكتور وائل مكي] - توصيف مساق أساسيات عملي 1", link: "./Fundamental of Nursing Clinical 1 توصيف مساق.pdf" },
-        { name: "👩‍🏫 [قسم الدكتورة حياة أبو نصيرة] - سيتم إضافة الملفات قريباً", link: "#" }
-      ],
-      lectures: [
-        { name: "👨‍🏫 محاضرات د. وائل مكي (قريباً)", link: "#" },
-        { name: "👩‍🏫 محاضرات د. حياة أبو نصيرة (قريباً)", link: "#" }
+      subtitle: "حركة الشبيبة الفتحاوية - اختر القسم أو الدكتور المطلوب",
+      isDoctorDivided: true, // مؤشر عشان الموقع يعرف إن هاي المادة مقسمة لدكاترة
+      sectionsList: [
+        {
+          id: "wael",
+          name: "الدكتور وائل مكي",
+          desc: "ملفات التدريب العملي، مهارة غسل اليدين، وتوصيف المساق",
+          slides: [
+            { name: "ملف مهارة غسل اليدين (Hand Washing Skill.pdf)", link: "./Hand Washing Skill.pdf" },
+            { name: "توصيف مساق أساسيات عملي 1 (Fundamental of Nursing Clinical 1 توصيف مساق.pdf)", link: "./Fundamental of Nursing Clinical 1 توصيف مساق.pdf" }
+          ],
+          lectures: []
+        },
+        {
+          id: "hayat",
+          name: "الدكتورة حياة أبو نصيرة",
+          desc: "ملفات ومحاضرات القسم العملي للدكتورة",
+          slides: [
+            { name: "سيتم إضافة الملفات والمحاضرات قريباً", link: "#" }
+          ],
+          lectures: []
+        }
       ]
     },
     fundamentals2: {
