@@ -132,7 +132,18 @@ footer p{margin:5px 0}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span>جامعة الأزهر – غزة</span><span>مرجعك الدراسي في مكان واحد</span></div></div>
+<div class="topbar">
+  <div class="wrap">
+    <span>جامعة الأزهر – غزة</span>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <span>مرجعك الدراسي في مكان واحد</span>
+      <!-- زر الإشعارات -->
+      <button type="button" id="notifBtn" style="background: var(--amber); color: white; border: none; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-family: inherit;">
+        🔔 الإشعارات <span id="notifBadge" style="background: #ef4444; color: white; border-radius: 50%; padding: 1px 6px; font-size: 10px;">1</span>
+      </button>
+    </div>
+  </div>
+</div>
 <header>
   <div class="wrap">
     <div class="brand">
@@ -733,6 +744,28 @@ footer p{margin:5px 0}
 </main><footer><div class="wrap"><strong>مكتبة التمريض | جامعة الأزهر – غزة</strong><p>العلم رسالة، والتمريض إنسانية.</p><p class="footer-note">مبادرة طلاب حركة الشبيبة الفتحاوية لتنظيم الموارد الأكاديمية — المستحيل ليس فلسطينياً .</p></div></footer>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // تفعيل نافذة الإشعارات
+  const notifBtn = document.getElementById('notifBtn');
+  const notifModal = document.getElementById('notifModal');
+  const closeNotif = document.getElementById('closeNotif');
+
+  if (notifBtn && notifModal) {
+    notifBtn.addEventListener('click', () => {
+      notifModal.style.display = 'flex';
+    });
+  }
+
+  if (closeNotif && notifModal) {
+    closeNotif.addEventListener('click', () => {
+      notifModal.style.display = 'none';
+    });
+  }
+
+  window.addEventListener('click', (e) => {
+    if (e.target === notifModal) {
+      notifModal.style.display = 'none';
+    }
+  });
   const searchForm = document.getElementById('searchForm');
   const searchInput = document.getElementById('searchInput');
 
@@ -2189,5 +2222,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+<!-- نافذة الإشعارات المنبثقة -->
+<div id="notifModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center;">
+  <div style="background: white; padding: 22px; border-radius: 14px; width: min(420px, 90%); box-shadow: 0 12px 32px rgba(0,0,0,0.2); text-align: right; direction: rtl; font-family: Tahoma, Arial, sans-serif;">
+    <h3 style="color: #12324a; margin-top: 0; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; font-size: 18px;">
+      <span>🔔 لوحة الإشعارات والتنبيهات</span>
+      <button type="button" id="closeNotif" style="border: none; background: #edf4f8; color: #12324a; cursor: pointer; padding: 4px 10px; border-radius: 50%; font-weight: bold; font-size: 14px;">✕</button>
+    </h3>
+    <hr style="border: 0; border-top: 1px solid #e1e9ef; margin: 10px 0 16px;">
+    <div style="font-size: 13.5px; color: #172b3a; line-height: 1.7; background: #fff8e8; border: 1px solid #fde68a; padding: 14px; border-radius: 10px;">
+      <p style="margin: 0;"><strong style="color: #b45309;">📢 إشعار هام:</strong> تم تحديث مواد السنة الثانية والفصل الدراسي الجديد، وتوفير كافة روابط محاضرات الدفعات. تمنياتنا لكم بالتوفيق الدائم! 🩺✨</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
