@@ -744,15 +744,36 @@ footer p{margin:5px 0}
 </main><footer><div class="wrap"><strong>مكتبة التمريض | جامعة الأزهر – غزة</strong><p>العلم رسالة، والتمريض إنسانية.</p><p class="footer-note">مبادرة طلاب حركة الشبيبة الفتحاوية لتنظيم الموارد الأكاديمية — المستحيل ليس فلسطينياً .</p></div></footer>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // تفعيل نافذة الإشعارات
   const notifBtn = document.getElementById('notifBtn');
+  const notifBadge = document.getElementById('notifBadge');
   const notifModal = document.getElementById('notifModal');
   const closeNotif = document.getElementById('closeNotif');
 
   if (notifBtn && notifModal) {
     notifBtn.addEventListener('click', () => {
+      // فتح النافذة المنبثقة
       notifModal.style.display = 'flex';
+      
+      // إخفاء العداد بعد المشاهدة (تصفير التنبيهات)
+      if (notifBadge) {
+        notifBadge.style.display = 'none';
+      }
     });
+  }
+
+  if (closeNotif && notifModal) {
+    closeNotif.addEventListener('click', () => {
+      notifModal.style.display = 'none';
+    });
+  }
+
+  // إغلاق النافذة عند الضغط خارجها
+  window.addEventListener('click', (e) => {
+    if (e.target === notifModal) {
+      notifModal.style.display = 'none';
+    }
+  });
+});
   }
 
   if (closeNotif && notifModal) {
@@ -2223,16 +2244,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<!-- نافذة الإشعارات المنبثقة -->
+<!-- نافذة الإشعارات المنبثقة نظام قائمة -->
 <div id="notifModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center;">
-  <div style="background: white; padding: 22px; border-radius: 14px; width: min(420px, 90%); box-shadow: 0 12px 32px rgba(0,0,0,0.2); text-align: right; direction: rtl; font-family: Tahoma, Arial, sans-serif;">
+  <div style="background: white; padding: 22px; border-radius: 14px; width: min(450px, 92%); box-shadow: 0 12px 32px rgba(0,0,0,0.2); text-align: right; direction: rtl; font-family: Tahoma, Arial, sans-serif; max-height: 80vh; display: flex; flex-direction: column;">
+    
     <h3 style="color: #12324a; margin-top: 0; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; font-size: 18px;">
       <span>🔔 لوحة الإشعارات والتنبيهات</span>
       <button type="button" id="closeNotif" style="border: none; background: #edf4f8; color: #12324a; cursor: pointer; padding: 4px 10px; border-radius: 50%; font-weight: bold; font-size: 14px;">✕</button>
     </h3>
-    <hr style="border: 0; border-top: 1px solid #e1e9ef; margin: 10px 0 16px;">
-    <div style="font-size: 13.5px; color: #172b3a; line-height: 1.7; background: #fff8e8; border: 1px solid #fde68a; padding: 14px; border-radius: 10px;">
-      <p style="margin: 0;"><strong style="color: #b45309;"> إشعار هام:</strong> جامعة الازهر حركة الشبيبة الفتحاوية </p>
+    
+    <hr style="border: 0; border-top: 1px solid #e1e9ef; margin: 0 0 14px 0;">
+
+    <!-- قائمة الإشعارات -->
+    <div style="overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-left: 5px;">
+      
+      <!-- عنصر إشعار 1 -->
+      <div style="background: #fff8e8; border: 1px solid #fde68a; padding: 12px 14px; border-radius: 10px; font-size: 13px; color: #172b3a; line-height: 1.6;">
+        <strong style="color: #b45309; display: block; margin-bottom: 3px;">📢 تحديث المقررات:</strong>
+        تم تحديث مواد السنة الثانية والفصل الدراسي الجديد، وتوفير كافة روابط محاضرات الدفعات.
+      </div>
+
+      <!-- عنصر إشعار 2 -->
+      <div style="background: #edf4f8; border: 1px solid #bce0ed; padding: 12px 14px; border-radius: 10px; font-size: 13px; color: #172b3a; line-height: 1.6;">
+        <strong style="color: #1b4965; display: block; margin-bottom: 3px;">🩺 امتحان NCLEX:</strong>
+        تم إضافة بنك أسئلة جديد وتجربة الامتحان الرسمية لعام 2026 في قسم NCLEX.
+      </div>
+
+      <!-- عنصر إشعار 3 -->
+      <div style="background: #f8fbfc; border: 1px solid #e1e9ef; padding: 12px 14px; border-radius: 10px; font-size: 13px; color: #172b3a; line-height: 1.6;">
+        <strong style="color: #12324a; display: block; margin-bottom: 3px;">👥 مجموعات الواتساب:</strong>
+        تم تجديد روابط مجموعات الدفعات الأكاديمية (2023 - 2026).
+      </div>
+
     </div>
   </div>
 </div>
