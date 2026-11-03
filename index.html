@@ -774,19 +774,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-  }
-
-  if (closeNotif && notifModal) {
-    closeNotif.addEventListener('click', () => {
-      notifModal.style.display = 'none';
-    });
-  }
-
-  window.addEventListener('click', (e) => {
-    if (e.target === notifModal) {
-      notifModal.style.display = 'none';
-    }
-  });
   const searchForm = document.getElementById('searchForm');
   const searchInput = document.getElementById('searchInput');
 
